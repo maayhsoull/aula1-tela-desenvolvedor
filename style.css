@@ -1,0 +1,52 @@
+/* seleciona todas as tags */
+/* Reset css */
+*{ 
+    margin: 0; /* tira o espaco das margens das tags */
+    padding: 0; /* espaco interno */
+    box-sizing: border-box; /* nao permite alterar o pad  */
+    
+}
+body{
+    background-color: #00FFFF; /*seleciona a cor do fundo*/
+    height: 100vh;/*altura // fullhd: 1929 x 1080 // porcentagem se refere a janela(navegador) usado */
+    display: flex;/*ir[a alterar a centralizacao do main, porque o main pertence ao body*/
+    /* so funciona as linhas abaixo se usar o flex */
+    justify-content: center; /*neste contexto alinha na horizoltal*/
+    align-items: center; /*neste contexto alinha na vertical*/
+
+}
+main{
+    display:flex; /*alinha um ao lado do outro*/
+    flex-direction: column; /*direcao dos elemntos*/
+    gap: 16px;/* espaco entre os itens*/
+}
+
+h1{
+    font-size: 128px; /*Muda o tamanho da fonte*/
+    font-family: sans-serif; /*muda a fonte, seleciona a primeira fonte do usu[ario sem serifa*/
+    font-weight: 100;/*largura da fonte*/
+}
+h2{
+    font-size: 48px;
+    font-family: sans-serif;
+    font-weight: 100;
+    text-align: center;
+}
+.destaque{
+    background-color: azure;
+    padding: 12px 20px;
+    transition: 1s;
+
+}
+.destaque:hover{ /*na tag destaque quando passar o mouse a cor muda*/
+    background-color: black;
+    color: aliceblue;
+    padding: 12px 40px;
+}
+div{
+    display: flex;
+    justify-content: space-around; /* alinha no centro, necessariamente no pai*/
+}
+img{
+    height: 100px;
+}
